@@ -1,0 +1,146 @@
+@import url('extra/fonts/font-face.css');
+* , a{
+    font-family: 'Vazir';
+}
+body{
+    margin: 0px !important;
+}
+.carousel{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+    background-color: #222634;
+}
+.navbar i{
+    font-size: 1.3rem;
+}
+.header-bg{
+    max-width:100%;
+    height:100vh;
+}
+.hover{
+    top: 0;
+    left: 0;
+    background-color: rgba(34,38,52,0.7);
+    /* z-index: 1; */
+}
+
+.hover h1{
+    font-size:3rem;
+    color: #fff;
+}
+.search{
+    width: 300px;
+}
+.search input{
+    background-color: rgba(255,255,255,0.2);
+    color: rgb(65, 65, 65) !important;
+    font-size: 0.8rem !important;
+    border: none;
+    padding:10px  10px 10px 40px;
+    width: 100%;
+}
+.search input:focus , input:active ,
+.search input:-webkit-autofill,
+.search input:-webkit-autofill:hover,
+.search input:-webkit-autofill:focus{
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+    -webkit-text-fill-color: rgb(65, 65, 65)!important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+
+}
+.search input::placeholder {
+    font-size: 0.8rem !important;
+    color:#d4d4d4;
+}
+.search i{
+    left: 13px;
+    top: 10px;
+    color: #d4d4d4;
+    z-index: 3;
+    font-size: 1rem;
+    transform: scaleX(-1);
+    transition: all 0.3s;
+}
+.search:hover i{
+    cursor: pointer;
+    color:  #bbbbbb;
+}
+
+.navbar{
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.text-light{
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.nav-item i{
+    font-size: 1rem !important;
+}
+.header-info{
+    bottom:-123px;
+    left: 0;
+    /* z-index: 3; */
+}
+.header-info .top{
+    background-color: rgba(255,255,255,0.1);
+    height: 60px;
+    transition: all 0.3s;
+}
+.header-info a{
+    transition: all 0.3s;
+}
+.header-info .top h2{
+    font-size: 1.1rem;
+}
+.header-info .text{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.header-info .text p{
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.8);
+}
+.header-info .col-md-3:hover {
+    cursor: pointer;
+}
+.header-info .col-md-3:hover .top{
+    background-color: rgba(234,77,106,0.8);
+}
+.header-info .col-md-3:hover a{
+    color: #ea4d6a;
+}
+/* article */
+.article{
+    margin-top:200px;
+}
+.contain:hover img{
+    transform: scale(1.02);
+}
+.contain img{
+    transition: all 0.3s;
+}
+.article .contain{
+    cursor: pointer;
+    overflow: hidden;
+}
+.article h3{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 1rem;
+    line-height: 25px;
+    transition: all 0.3s;
+}
+.contain:hover h3{
+    color: #ea4d6a;
+}
+.article p{
+    color:rgba(0,0,0,0.6);
+    font-size: 0.8rem;
+    line-height: 25px;
+}
