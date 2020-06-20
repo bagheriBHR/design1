@@ -39,7 +39,7 @@
     visibility:hidden;
     visibility:visible\9;/*For old IE browsers IE6-8 */
 }
-.slideanim.slide {visibility: visible; animation:slide 1s;}
+.slideanim.slide {visibility: visible; animation:slide 2s;}
 .slideanim::after {
     /* useful when its child elements are float:left; */
     content: "";
