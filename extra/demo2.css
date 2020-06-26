@@ -21,15 +21,6 @@
     .fixed {box-shadow:0 2px 6px rgba(119, 119, 119, 0.2);animation:slide-down 0.7s;opacity:1}
     
     .fixed .top-header{display: none;transition:all 1s;}
-	.fixed .logo-container {width: 60px;height: 60px;}
-	.fixed .logo h1{
-		color: #142d48;
-		font-size: 1.3rem;
-		font-weight: bold;
-	}
-	.fixed .navbar li{
-        padding: 18px 15px;
-    }
     @keyframes slide-down {
         0% {
             opacity: 0;
