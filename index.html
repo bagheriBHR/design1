@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="extra/demo2.css">
     <title>design1</title>
 </head>
-<body class="bg-light">
+<body >
+        <a href="javascript:" id="return-to-top" title="انتقال به بالا"><i class="fa fa-angle-up"></i></a>
         <!-- navbar -->
-        <div class="d-flex flex-column float-panel mobile-fixed" id="top" data-top="0" data-scroll="50">
+        <div class="d-flex flex-column" id="top">
             <div class="top-header py-2">
                 <div class="container d-flex justify-content-between ">
                     <div class="d-flex">
@@ -27,12 +28,12 @@
                         <a><i class="fa fa-telegram text-light mx-2"></i></a>
                     </div>
                     <div class="d-flex text-light">
-                        <span class="ml-3 font-weight-bold">email@yahoo.com</span>
-                        <span class="font-weight-bold">+989137786756</span>
+                        <span class="ml-3 font-weight-bold">info@exam.com</span>
+                        <span class="font-weight-bold">+989132924768</span>
                     </div>
                 </div>
             </div>
-            <div class="bg-light navbar-container ">
+            <div class="bg-light navbar-container float-panel mobile-fixed" data-top="0" data-scroll="0">
                 <div class="px-15 d-flex flex-column flex-md-row justify-content-between align-items-center w-100" >
                     <div class="d-none d-md-block ">
                         <div class="logo d-flex align-items-center">
@@ -59,19 +60,22 @@
                         <div class="collapse navbar-collapse bg-inverse bg-light" id="navbarCollapse">
                         <ul class="navbar-nav p-0 h-100">
                             <li class="nav-item active">
-                            <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">مقالات</a>
+                                <a class="nav-link" href="#">مقالات</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">دوره ها</a>
+                                <a class="nav-link" href="#">دوره ها</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">درباره ما</a>
+                                <a class="nav-link" href="#">منابع</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">تماس با ما</a>
+                                <a class="nav-link" href="#">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تماس با ما</a>
                             </li>
                         </ul>
                         </div>
@@ -88,7 +92,7 @@
         <div class="carousel mb-0">
             <div class="w-100 h-100">
                 <div class="hover w-100 h-100 position-absolute d-flex flex-column align-items-center justify-content-center">
-                    <h1 class="d-none d-md-block mb-5"> وب سایت آموزش ....</h1>
+                    <h1 class="d-none d-md-block mb-5"> وب سایت آموزش زبان انگلیسی</h1>
                     <form class="search position-relative mx-1" >
                         <input type="text"  onfocus="this.placeholder=''" onblur="this.placeholder='جستجو کنید...'" name="search" placeholder="جستجو کنید..." class="search w-100 py-3">
                         <a class="h-100 d-flex align-items-center position-absolute"><i class="fa fa-search"></i></a>
@@ -112,7 +116,7 @@
                 <div class="col-12 col-md-3 d-flex flex-column">
                     <div>
                         <div class="top w-100 d-flex justify-content-center align-items-center text-white">
-                            <h2 class="font-weight-bold">عنوان اول</h2>
+                            <h2 class="font-weight-bold">عنوان دوم</h2>
                         </div>
                         <div class="text bg-white p-3 text-center">
                             <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
@@ -123,7 +127,7 @@
                 <div class="col-12 col-md-3 d-flex flex-column">
                     <div>
                         <div class="top w-100 d-flex justify-content-center align-items-center text-white">
-                            <h2 class="font-weight-bold">عنوان اول</h2>
+                            <h2 class="font-weight-bold">عنوان سوم</h2>
                         </div>
                         <div class="text bg-white p-3 text-center">
                             <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
@@ -136,18 +140,18 @@
     <!-- end of carousel -->
     
     <!-- services -->
-    <div class="bg-gray2 mt-200 py-5 ">
+    <div class="bg-gray2 mt-200 py-4 ">
         <div class="container d-flex flex-column align-items-center">
             <div class="title w-100  d-flex justify-content-start align-items-center mb-5 px-2">
                 <h2 class="mb-2">خدمات</h2>
             </div>
-            <div class="d-flex flex-wrap mb-0 mb-md-5 " >
+            <div class="d-flex flex-wrap mb-0 my-md-5 " >
                 <div class="service col-12 col-md-4 d-flex flex-column align-items-center justify-content-center p-5 mb-3 mb-md-0">
                     <a href="#grammer" class="text-decoration-none">
                         <div class="d-flex justify-content-center align-items-center mb-3">
                             <img src="image/grammer2.png" alt="" class="w-100">
                         </div>
-                        <h4 class="mt-3 font-weight-bold">آموزش گرامر</h4>
+                        <h4 class="mt-4 mb-0">آموزش گرامر</h4>
                         </a>
                 </div>
                 <div class="service col-12 col-md-4 d-flex flex-column align-items-center justify-content-center p-5 mb-3 mb-md-0">
@@ -155,7 +159,7 @@
                         <div class="d-flex justify-content-center align-items-center mb-3">
                             <img src="image/speaking.png" alt="" class="w-100">
                         </div>
-                        <h4 class="mt-3 font-weight-bold">آموزش مکالمه</h4>
+                        <h4 class="mt-4 mb-0">آموزش مکالمه</h4>
                     </a>
                 </div>
                 <div class="service col-12 col-md-4 d-flex flex-column align-items-center justify-content-center p-5 mb-3 mb-md-0">
@@ -163,7 +167,7 @@
                         <div class="d-flex justify-content-center align-items-center mb-3">
                             <img src="image/pronounciation.png" alt="" class="w-100">
                         </div>
-                        <h4 class="mt-3 font-weight-bold">آموزش تلفظ</h4>
+                        <h4 class="mt-4 mb-0">آموزش تلفظ</h4>
                     </a>
                 </div>
                 <div class="service col-12 col-md-4 d-flex flex-column align-items-center justify-content-center p-5 mb-3 mb-md-0">
@@ -171,7 +175,7 @@
                         <div class="d-flex justify-content-center align-items-center mb-3">
                             <img src="image/writing.png" alt="" class="w-100">
                         </div>
-                        <h4 class="mt-3 font-weight-bold">آموزش نوشتن</h4>
+                        <h4 class="mt-4 mb-0">آموزش نوشتن</h4>
                     </a>
                 </div>
                 <div class="service col-12 col-md-4 d-flex flex-column align-items-center justify-content-center p-5 mb-3 mb-md-0">
@@ -179,7 +183,7 @@
                         <div class="d-flex justify-content-center align-items-center mb-3">
                             <img src="image/books.gif" alt="" class="w-100">
                         </div>
-                        <h4 class="mt-3 font-weight-bold">کتاب داستان</h4>
+                        <h4 class="mt-4 mb-0">کتاب داستان</h4>
                     </a>
                 </div>
                 <div class="service col-12 col-md-4 d-flex flex-column align-items-center justify-content-center p-5 mb-3 mb-md-0">
@@ -187,7 +191,7 @@
                         <div class="d-flex justify-content-center align-items-center mb-3">
                             <img src="image/music.png" alt="" class="w-100">
                         </div>
-                        <h4 class="mt-3 font-weight-bold">شعر و موزیک انگلیسی</h4>
+                        <h4 class="mt-4 mb-0">شعر و موزیک انگلیسی</h4>
                     </a>
                 </div>
             </div>
@@ -195,7 +199,7 @@
     </div>
     <!-- end of services -->
     <!-- courses1 -->
-    <div class=" container d-flex flex-column align-items-center py-5">
+    <div class=" container d-flex flex-column align-items-center py-4">
         <div class="title w-100 d-flex justify-content-start align-items-center mb-5 px-2" id="grammer">
             <h2 class="mb-2">دوره های آموزش گرامر</h2>
             <a class="mr-auto"><span >مشاهده همه</span></a>
@@ -204,8 +208,8 @@
             <section class=" topservice center slider w-100 mt-0 " dir="ltr">
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش reactjs</h3>
+                        <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
+                        <h3> دوره اول</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -218,8 +222,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش کامل HTML و CSS </h3>
+                        <img src="image/gcourse2.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره دوم </h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -232,8 +236,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش حرفه ای لاراول</h3>
+                        <img src="image/gcourse3.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره سوم</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -246,8 +250,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش reactjs</h3>
+                        <img src="image/gcourse4.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره چهارم</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -260,8 +264,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش کامل HTML و CSS </h3>
+                        <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره پنجم </h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -274,8 +278,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش حرفه ای لاراول</h3>
+                        <img src="image/gcourse2.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره ششم</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -291,105 +295,73 @@
     </div>
     <!-- end of courses1 -->
     <!-- courses2 -->
-    <div class="bg-gray2 py-5" id="speaking">
+    <div class="bg-gray2 py-4" id="speaking">
         <div class="container d-flex flex-column align-items-center">
             <div class="title w-100 d-flex justify-content-start align-items-center mb-5 px-2">
                 <h2 class="mb-2">دوره های آموزش مکالمه</h2>
                 <a class="mr-auto"><span >مشاهده همه</span></a>
             </div>
-            <!-- <div class=" d-flex flex-wrap py-0 py-md-5"> -->
-                <section class=" topservice center slider w-100 mt-0 " dir="ltr">
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش reactjs</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
-                            </div>
+            <div class=" d-flex flex-wrap w-100 mb-md-5">
+                <div class="col-12 col-md-4 py-0 pt-5" dir="rtl">
+                    <div class="topitem2 d-flex flex-column align-items-center mt-3 mt-md-0 position-relative">
+                        <img src="image/speaking1.jpg" alt="" class="w-100"/>
+                        <div class="position-absolute w-100 h-100 p-3">
+                            <h3>سطح مقدماتی A1</h3>
+                            <p class="mt-3 text-justify mb-0"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بو لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش کامل HTML و CSS </h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
-                            </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-4 py-0 pt-5" dir="rtl">
+                    <div class="topitem2 d-flex flex-column align-items-center mt-3 mt-md-0 position-relative">
+                        <img src="image/speaking2.jpg" alt="" class="w-100"/>
+                        <div class="position-absolute w-100 h-100 p-3">
+                            <h3>سطح مقدماتی A2</h3>
+                            <p class="mt-3 text-justify mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش حرفه ای لاراول</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
-                            </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-4 py-0 pt-5" dir="rtl">
+                    <div class="topitem2 d-flex flex-column align-items-center mt-3 mt-md-0 position-relative">
+                        <img src="image/speaking3.jpg" alt="" class="w-100"/>
+                        <div class="position-absolute w-100 h-100 p-3">
+                            <h3>سطح متوسطه B1</h3>
+                            <p class="mt-3 text-justify mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش reactjs</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
-                            </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-4 py-0 pt-5" dir="rtl">
+                    <div class="topitem2 d-flex flex-column align-items-center mt-3 mt-md-0 position-relative">
+                        <img src="image/speaking4.jpg" alt="" class="w-100"/>
+                        <div class="position-absolute w-100 h-100 p-3">
+                            <h3>سطح متوسطه B2</h3>
+                            <p class="mt-3 text-justify mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش کامل HTML و CSS </h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
-                            </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-4 py-0 pt-5" dir="rtl">
+                    <div class="topitem2 d-flex flex-column align-items-center mt-3 mt-md-0 position-relative">
+                        <img src="image/speaking1.jpg" alt="" class="w-100"/>
+                        <div class="position-absolute w-100 h-100 p-3">
+                            <h3>سطح پیشرفته S1</h3>
+                            <p class="mt-3 text-justify mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش حرفه ای لاراول</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
-                            </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-4 py-0 pt-5" dir="rtl">
+                    <div class="topitem2 d-flex flex-column align-items-center mt-3 mt-md-0 position-relative">
+                        <img src="image/speaking2.jpg" alt="" class="w-100"/>
+                        <div class="position-absolute w-100 h-100 p-3">
+                            <h3>سطح پیشرفته S2</h3>
+                            <p class="mt-3 text-justify mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                         </div>
-                    </div> 
-                </section>
-            <!-- </div> -->
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
     <!-- end of courses2 -->
     <!-- courses3 -->
-    <div class=" container d-flex flex-column align-items-center py-5" id="pronounciation">
+    <div class=" container d-flex flex-column align-items-center py-4" id="pronounciation">
         <div class="title w-100 d-flex justify-content-start align-items-center mb-5 px-2">
             <h2 class="mb-2">دوره های آموزش تلفظ</h2>
             <a class="mr-auto"><span >مشاهده همه</span></a>
@@ -398,8 +370,8 @@
             <section class=" topservice center slider w-100 mt-0 " dir="ltr">
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش reactjs</h3>
+                        <img src="image/course11.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره اول</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -412,8 +384,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش کامل HTML و CSS </h3>
+                        <img src="image/course10.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره دوم </h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -426,8 +398,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش حرفه ای لاراول</h3>
+                        <img src="image/course4.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره سوم</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -440,8 +412,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش reactjs</h3>
+                        <img src="image/course3.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره چهارم</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -454,8 +426,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش کامل HTML و CSS </h3>
+                        <img src="image/course8.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره پنجم </h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -468,8 +440,8 @@
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
                     <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>آموزش حرفه ای لاراول</h3>
+                        <img src="image/course3.jpg" alt="" class="mb-4 w-100"/>
+                        <h3>دوره ششم</h3>
                         <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
                         <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
                             <div class=" d-flex justify-content-right align-items-end">
@@ -485,105 +457,97 @@
     </div>
     <!-- end of courses3 -->
     <!-- courses4 -->
-    <div class="bg-gray2 py-5" id="writing">
+    <div class="bg-gray2 py-4" id="writing">
         <div class="container d-flex flex-column align-items-center">
             <div class="title w-100 d-flex justify-content-start align-items-center mb-5 px-2">
                 <h2 class="mb-2">دوره های آموزش نوشتن</h2>
                 <a class="mr-auto"><span >مشاهده همه</span></a>
             </div>
-            <!-- <div class=" d-flex flex-wrap py-0 py-md-5"> -->
-                <section class=" topservice center slider w-100 mt-0 " dir="ltr">
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش reactjs</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
+            <div class=" d-flex flex-wrap w-100 mb-md-5">
+                <div class="col-12 col-md-6 py-0 pt-0 pt-md-5">
+                    <div class="topitem3 d-flex flex-column flex-md-row align-items-center">
+                        <div class="col-12 col-md-6 p-1">
+                            <img src="image/writing1.jpg" alt="" class="w-100 ml-2"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column w-100 text-right py-3 py-md-0">
+                            <div class="border_right w-100 pr-2">
+                                <a>سطح مقدماتی A1</a>
+                                <p class="mt-3 text-justify mb-0">تولید سادگی نامفهوم از  چاپ و بود.تولید سادگی نامفهوم از  چاپ و بود. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                             </div>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش کامل HTML و CSS </h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 py-0 pt-3 pt-md-5">
+                    <div class="topitem3 d-flex flex-column flex-md-row align-items-center">
+                        <div class="col-12 col-md-6 p-1">
+                            <img src="image/writing2.jpg" alt="" class="w-100 ml-2"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column w-100 text-right py-3 py-md-0">
+                            <div class="border_right w-100 pr-2 ">
+                                <a>سطح مقدماتی A2</a>
+                                <p class="mt-3 text-justify mb-0">تولید سادگی نامفهوم از  چاپ و بود.تولید سادگی نامفهوم از  چاپ و بود. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                             </div>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش حرفه ای لاراول</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 py-0 pt-3 pt-md-5">
+                    <div class="topitem3 d-flex flex-column flex-md-row align-items-center">
+                        <div class="col-12 col-md-6 p-1">
+                            <img src="image/writing3.jpg" alt="" class="w-100 ml-2"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column w-100 text-right py-3 py-md-0">
+                            <div class="border_right w-100 pr-2 ">
+                                <a>سطح متوسطه B1</a>
+                                <p class="mt-3 text-justify mb-0">تولید سادگی نامفهوم از  چاپ و بود.تولید سادگی نامفهوم از  چاپ و بود. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                             </div>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/react-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش reactjs</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 py-0 pt-3 pt-md-5">
+                    <div class="topitem3 d-flex flex-column flex-md-row align-items-center">
+                        <div class="col-12 col-md-6 p-1">
+                            <img src="image/writing4.jpg" alt="" class="w-100 ml-2"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column w-100 text-right py-3 py-md-0">
+                            <div class="border_right w-100 pr-2 ">
+                                <a>سطح متوسطه B2</a>
+                                <p class="mt-3 text-justify mb-0">تولید سادگی نامفهوم از  چاپ و بود.تولید سادگی نامفهوم از  چاپ و بود. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                             </div>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/htmicss-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش کامل HTML و CSS </h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 py-0 pt-3 pt-md-5">
+                    <div class="topitem3 d-flex flex-column flex-md-row align-items-center">
+                        <div class="col-12 col-md-6 p-1">
+                            <img src="image/writing5.jpg" alt="" class="w-100 ml-2"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column w-100 text-right py-3 py-md-0">
+                            <div class="border_right w-100 pr-2 ">
+                                <a>سطح پیشرفته</a>
+                                <p class="mt-3 text-justify mb-0">تولید سادگی نامفهوم از  چاپ و بود.تولید سادگی نامفهوم از  چاپ و بود. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                             </div>
                         </div>
-                    </div> 
-                    <div class="py-0 pb-5 py-md-5" dir="rtl">
-                        <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                            <img src="image/laravel-course.jpg" alt="" class="mb-4 w-100"/>
-                            <h3>آموزش حرفه ای لاراول</h3>
-                            <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                                <div class=" d-flex justify-content-right align-items-end">
-                                    <i class="fa fa-heart ml-2 pb-1"></i>
-                                    <h5 class="m-0">20 نفر</h5>
-                                </div>
-                                <h5 class="m-0">رایگان</h5>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 py-0 pt-3 pt-md-5">
+                    <div class="topitem3 d-flex flex-column flex-md-row align-items-center">
+                        <div class="col-12 col-md-6 p-1">
+                            <img src="image/writing6.jpg" alt="" class="w-100 ml-2"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column w-100 text-right py-3 py-md-0">
+                            <div class="border_right w-100 pr-2 ">
+                                <a>نوشتن مقاله</a>
+                                <p class="mt-3 text-justify mb-0">تولید سادگی نامفهوم از  چاپ و بود.تولید سادگی نامفهوم از  چاپ و بود. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  چاپ و بود. </p>
                             </div>
                         </div>
-                    </div> 
-                </section>
-            <!-- </div> -->
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
     <!-- end of courses4 -->
     <!-- courses5 -->
-    <div class=" container d-flex flex-column align-items-center py-5" id="book">
+    <div class=" container d-flex flex-column align-items-center py-4" id="book">
         <div class="title w-100 d-flex justify-content-start align-items-center mb-5 px-2">
             <h2 class="mb-2">کتاب</h2>
             <a class="mr-auto"><span >مشاهده همه</span></a>
@@ -651,7 +615,7 @@
     </div>
     <!-- end of courses5 -->
     <!-- courses6 -->
-    <div class="bg-gray2 py-5" id="music">
+    <div class="bg-gray2 py-4" id="music">
         <div class="container d-flex flex-column align-items-center">
             <div class="title w-100 d-flex justify-content-start align-items-center mb-5 px-2">
                 <h2 class="mb-2">شعر و موزیک انگلیسی</h2>
@@ -664,7 +628,7 @@
                             <img src="image/music2.jpg" alt="" class="mb-3 w-100"/>
                             <div class="px-3 d-flex justify-content-between w-100">
                                 <h6>نام آهنگ</h6>
-                                <h6><i class="ion ion-clock ml-2"></i>2:02</h6>
+                                <h6>2:02<i class="ion ion-clock mr-2"></i></h6>
                             </div>
                             <div class=" d-flex w-100">
                                 <div class="col-6 pl-1">
@@ -687,7 +651,7 @@
                             <img src="image/dubstep.jpg" alt="" class="mb-3 w-100"/>
                             <div class="px-3 d-flex justify-content-between w-100">
                                 <h6>نام آهنگ</h6>
-                                <h6><i class="ion ion-clock ml-2"></i>2:02</h6>
+                                <h6>2:02<i class="ion ion-clock mr-2"></i></h6>
                             </div>
                             <div class=" d-flex w-100">
                                 <div class="col-6 pl-1">
@@ -710,7 +674,7 @@
                             <img src="image/music3.jpg" alt="" class="mb-3 w-100"/>
                             <div class="px-3 d-flex justify-content-between w-100">
                                 <h6>نام آهنگ</h6>
-                                <h6><i class="ion ion-clock ml-2"></i>2:02</h6>
+                                <h6>2:02<i class="ion ion-clock mr-2"></i></h6>
                             </div>
                             <div class=" d-flex w-100">
                                 <div class="col-6 pl-1">
@@ -733,7 +697,7 @@
                             <img src="image/dubstep.jpg" alt="" class="mb-3 w-100"/>
                             <div class="px-3 d-flex justify-content-between w-100">
                                 <h6>نام آهنگ</h6>
-                                <h6><i class="ion ion-clock ml-2"></i>2:02</h6>
+                                <h6>2:02<i class="ion ion-clock mr-2"></i></h6>
                             </div>
                             <div class=" d-flex w-100">
                                 <div class="col-6 pl-1">
@@ -756,7 +720,7 @@
                             <img src="image/music3.jpg" alt="" class="mb-3 w-100"/>
                             <div class="px-3 d-flex justify-content-between w-100">
                                 <h6>نام آهنگ</h6>
-                                <h6><i class="ion ion-clock ml-2"></i>2:02</h6>
+                                <h6>2:02<i class="ion ion-clock mr-2"></i></h6>
                             </div>
                             <div class=" d-flex w-100">
                                 <div class="col-6 pl-1">
@@ -780,7 +744,7 @@
     </div>
     <!-- end of courses6 -->
     <!-- article -->
-    <div class=" article container d-flex flex-column align-items-center mt-0  py-5">
+    <div class=" article container d-flex flex-column align-items-center mt-0  py-4">
         <div class="title w-100 d-flex justify-content-start align-items-center mb-5 px-2">
             <h2 class="mb-2">مقالات</h2>
             <a  class="mr-auto"><span>مشاهده همه</span></a>
@@ -866,7 +830,7 @@
     <!-- end of article -->
     <!-- aboutus -->
       <!-- about us -->
-    <div class="container-fluid bg-gray2 py-5">
+    <div class="container-fluid bg-gray2 pt-4 pb-5 ">
         <div class="about container d-flex flex-column">
             <!-- logo -->
             <!-- <a class="navbar-brand m-0" href="#">
@@ -917,95 +881,182 @@
     <!-- end of about us -->
     <!-- footer -->
     <div class="bg-footer py-5">
-        <div class="footer container d-flex flex-column flex-md-row p-0">
-            <div class="col-12 col-md-2 mb-3 pb-3 pb-md-0 mb-md-0">
-                <div class="mr-3 mr-md-0">
-                    <h4 class="text-right font-weight-bold pb-4">منو</h4>
-                    <ul class="navbar-nav mr-auto p-0">
-                        <li class="nav-item">
-                            <a class="nav-link pt-0 pb-4 text-right" href="#">صفحه اصلی</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pt-0 pb-4 text-right" href="#">دوره ها</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pt-0 pb-4 text-right" href="#">مطالب</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pt-0 pb-4 text-right" href="#">تماس با ما</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pt-0 pb-4 text-right" href="#">درباره ما</a>
-                        </li>
+        <div class="footer container d-flex flex-column p-0">
+            <div class="mb-3 pb-3">
+                <ul class="nav justify-content-center pr-0 pb-3 mb-2 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">مقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">دوره ها</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">کتاب</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">موزیک</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">تماس با ما</a>
+                    </li>
                     </ul>
-                </div>
             </div>
-            <div class="col-12 col-md-4 mb-3 pb-3 pb-md-0 mb-md-0 ml-md-3">
-                <div class="mx-3 mx-md-0">
-                    <h4 class="text-right font-weight-bold pb-4">آخرین مطالب</h4>
-                    <div class="articleitem d-flex align-items-start">
-                        <img src="image/b3.jpg" alt="" class="ml-3">
-                        <div class="d-flex flex-column">
-                            <h5 class="text-right">عنوان مطلب</h5>
-                            <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+            <div class=" d-flex flex-column flex-md-row p-0">
+                <div class="col-12 col-md-3 mb-3 pb-3 pb-md-0 mb-md-0">
+                    <div class="mr-3 mr-md-0">
+                        <h4 class="text-right font-weight-bold pb-4">منابع</h4>
+                        <div class="articleitem d-flex align-items-start mb-4">
+                            <img src="image/book1.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">کتاب 1</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="articleitem d-flex align-items-start">
-                        <img src="image/b2.jpg" alt="" class="ml-3">
-                        <div class="d-flex flex-column">
-                            <h5 class="text-right">عنوان مطلب</h5>
-                            <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                        <div class="articleitem d-flex align-items-start mb-4">
+                            <img src="image/book6.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">کتاب 2</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="articleitem d-flex align-items-start">
-                        <img src="image/bg3.png" alt="" class="ml-3">
-                        <div class="d-flex flex-column">
-                            <h5 class="text-right">عنوان مطلب</h5>
-                            <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                        <div class="articleitem d-flex align-items-start mb-4">
+                            <img src="image/book4.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">کتاب 3</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-12 col-md-2 mb-3 pb-3 pb-md-0 mb-md-0">
-                <div class="mx-3 mx-md-0">
-                    <h4 class="text-right font-weight-bold pb-4">آخرین دوره ها</h4>
-                    <div class="articleitem d-flex align-items-start mb-4">
-                        <img src="image/python-course.jpg" alt="" class="ml-3">
-                        <div class="d-flex flex-column">
-                            <h5 class="text-right m-0">عنوان 1</h5>
-                            <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
-                        </div>
-                    </div>
-                    <div class="articleitem d-flex align-items-start mb-4">
-                        <img src="image/angular-course.jpg" alt="" class="ml-3">
-                        <div class="d-flex flex-column">
-                            <h5 class="text-right m-0">عنوان 2</h5>
-                            <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
-                        </div>
-                    </div>
-                    <div class="articleitem d-flex align-items-start mb-4">
-                        <img src="image/flutter-course.jpg" alt="" class="ml-3">
-                        <div class="d-flex flex-column">
-                            <h5 class="text-right m-0">عنوان 3</h5>
-                            <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                        <div class="articleitem d-flex align-items-start mb-4">
+                            <img src="image/book3.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">کتاب 4</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 d-flex align-items-center">
-                <form class="w-100 p-0 mx-3 mx-md-0">
-                    <div class="form-group d-flex flex-column align-items-start ">
-                        <input type="email" class="form-control form-control-sm" id="inputEmail4" placeholder="نام و نام خانوادگی"/>
+                <div class="col-12 col-md-3 mb-3 pb-3 pb-md-0 mb-md-0 ml-md-3">
+                    <div class="mx-3 mx-md-0">
+                        <h4 class="text-right font-weight-bold pb-4">آخرین مطالب</h4>
+                        <div class="articleitem d-flex align-items-start">
+                            <img src="image/b3.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right">عنوان مطلب</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-start">
+                            <img src="image/b2.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right">عنوان مطلب</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-start">
+                            <img src="image/bg3.png" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right">عنوان مطلب</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-start">
+                            <img src="image/speaking1.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right">عنوان مطلب</h5>
+                                <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-12 col-md-2 mb-3 pb-3 pb-md-0 mb-md-0">
+                    <div class="mx-3 mx-md-0">
+                        <h4 class="text-right font-weight-bold pb-4">آخرین دوره ها</h4>
+                        <div class="articleitem d-flex align-items-center mb-4">
+                            <img src="image/gcourse3.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">عنوان 1</h5>
+                                <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-center mb-4">
+                            <img src="image/gcourse2.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">عنوان 2</h5>
+                                <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-center mb-4">
+                            <img src="image/speaking1.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">عنوان 3</h5>
+                                <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-center mb-4">
+                            <img src="image/speaking2.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">عنوان 4</h5>
+                                <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-center mb-4">
+                            <img src="image/speaking3.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">عنوان 5</h5>
+                                <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-center mb-4">
+                            <img src="image/speaking4.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">عنوان 6</h5>
+                                <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                            </div>
+                        </div>
+                        <div class="articleitem d-flex align-items-center mb-4">
+                            <img src="image/speaking1.jpg" alt="" class="ml-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="text-right m-0">عنوان 7</h5>
+                                <!-- <p class="text-justify"> به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p> -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group d-flex flex-column align-items-start">
-                        <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="ایمیل"/>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column align-items-right">
+                    <h4 class="text-right font-weight-bold pb-4">نظر شما</h4>
+                    <form class="w-100 p-0 mx-3 mx-md-0">
+                        <div class="form-group d-flex flex-column align-items-start ">
+                            <input type="email" class="form-control form-control-sm" id="inputEmail4" placeholder="نام و نام خانوادگی"/>
+                        </div>
+                        <div class="form-group d-flex flex-column align-items-start">
+                            <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="ایمیل"/>
+                        </div>
+                        <div class="form-group d-flex flex-column align-items-start">
+                            <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="2" placeholder="پیام شما"></textarea>
+                        </div>
+                        <button type="submit" class="btn">ارسال</button>
+                    </form>
+                    <div class="d-flex justify-content-start mt-4">
+                        <div class="follow_container d-flex justify-content-center align-items-center ml-3">
+                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="follow_container d-flex justify-content-center align-items-center ml-3">
+                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                        <div class="follow_container d-flex justify-content-center align-items-center ml-3">
+                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-telegram"></i></a>
+                        </div>
+                        <div class="follow_container d-flex justify-content-center align-items-center ml-3">
+                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-twitter"></i></a>
+                        </div>
                     </div>
-                    <div class="form-group d-flex flex-column align-items-start">
-                        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="2" placeholder="پیام شما"></textarea>
-                    </div>
-                    <button type="submit" class="btn">ارسال</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -1021,7 +1072,7 @@
     <script src="./extra/slick/slick.js"></script>
     <script>
             $(document).ready(function(){
-            $(".carousel").css("height", $(window).height()-$(".float-panel").height());
+            $(".carousel").css("height", $(window).height()-$("#top").height());
         });
 
         $(window).on('scroll', function () {
@@ -1110,6 +1161,55 @@
                     },
                 }
             })
+        });
+
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+        
+        // ---hide scroll in footer
+        $(function () {
+            var lastScrollTop = 0;
+            var $navbar = $('.float-panel');
+
+            $(window).scroll(function(event){
+                var st = $(this).scrollTop();
+
+                if (st > lastScrollTop) { // scroll down
+                
+                // use this is jQuery full is used
+                $navbar.fadeOut()
+                
+                // use this to use CSS3 animation
+                // $navbar.addClass("fade-out");
+                // $navbar.removeClass("fade-in");
+                
+                // use this if no effect is required
+                // $navbar.hide();
+                } else { // scroll up
+                
+                // use this is jQuery full is used
+                $navbar.fadeIn()
+                
+                // use this to use CSS3 animation
+                // $navbar.addClass("fade-in");
+                // $navbar.removeClass("fade-out");
+                
+                // use this if no effect is required
+                // $navbar.show();
+                }
+                lastScrollTop = st;
+            });
         });
     </script>
 </body>

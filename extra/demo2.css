@@ -18,7 +18,7 @@
 		padding: 30px 15px;
 		transition:all 0.5s;
     }
-    .fixed {box-shadow:0 2px 6px rgba(119, 119, 119, 0.2);animation:slide-down 0.7s;opacity:1}
+    .fixed {box-shadow:0 2px 6px rgba(119, 119, 119, 0.2);opacity:1}
     
     .fixed .top-header{display: none;transition:all 1s;}
     @keyframes slide-down {
