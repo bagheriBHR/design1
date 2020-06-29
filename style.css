@@ -213,6 +213,8 @@ body{
 }
 .carousel{
     height: 100vh;
+    width: 100%;
+    overflow:hidden;
     position: relative;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -221,6 +223,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.carousel .carousel-inner {
+    height:100%;    
+}
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 .navbar-btn{
     color: #fff !important;
     background-color:rgba(193, 98, 162, 1) ;
