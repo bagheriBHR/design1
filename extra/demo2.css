@@ -1,7 +1,7 @@
 ﻿
 /* ---------------- For sticky header: class="float-panel"  ------------------*/
     .float-panel {
-        width:100%;z-index:300;padding:0;transform: translateZ(0);
+        width:100%;z-index:1000;padding:0;transform: translateZ(0);
         transition:all 1s; /* Effect for switching from .fixed to static */
     }
     .float-pannel .top-header{display: block;transition:all 1s !important;}
@@ -18,7 +18,7 @@
 		padding: 30px 15px;
 		transition:all 0.5s;
     }
-    .fixed {box-shadow:0 2px 6px rgba(119, 119, 119, 0.2);opacity:1}
+    .fixed {box-shadow:0 2px 6px rgba(119, 119, 119, 0.2);opacity:1;z-index:1000 !important}
     
     .fixed .top-header{display: none;transition:all 1s;}
     @keyframes slide-down {
