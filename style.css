@@ -665,6 +665,7 @@ body{
     width: 40px;
     height: auto;
     border: 1px solid rgba(255,255,255,0.5);
+    border-radius:6px;
 }
 .articleitem p{
     font-size: 0.7rem !important;
@@ -1091,3 +1092,44 @@ label.star:before {
     background-color: transparent;
   }
   
+  /*book info ----------------------------------------------------------------- */
+  .price input{
+    width: 30px;
+    border: 0px;
+}
+.price button{
+    background-color: #1b6a6f;
+    border: 2px solid #1b6a6f;
+    border-radius: 0px;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    color: #fff;
+    opacity: 0.6;
+}
+.price button:hover{
+    background-color: #1b6a6f;
+    border: 2px solid #1b6a6f;
+    color: #fff;
+    font-size: 0.8rem;
+    opacity: 1;
+}
+.price span{
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.7);
+}
+.courseContent img{
+    width: 20px;
+}
+.book_title{
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.7);
+}
+.course_info{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+/* article info---------------------------------------------------------------------------- */
+.article_info i{
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.6);
+}
