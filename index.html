@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="./extra/slick/slick-theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="button.css">
+
     <script src="./extra/js/float-panel.js"></script>
     <link rel="stylesheet" href="extra/demo2.css">
     <title>design1</title>
@@ -23,9 +25,9 @@
             <div class="top-header py-2">
                 <div class="px-3 px-md-5 d-flex justify-content-between ">
                     <div class="d-flex">
-                        <a><i class="fa fa-instagram text-light mx-2"></i></a>
-                        <a><i class="fa fa-whatsapp text-light mx-2"></i></a>
-                        <a><i class="fa fa-telegram text-light mx-2"></i></a>
+                        <a><i class="fab fa-instagram text-light mx-2"></i></a>
+                        <a><i class="fab fa-whatsapp text-light mx-2"></i></a>
+                        <a><i class="fab fa-telegram text-light mx-2"></i></a>
                     </div>
                     <div class="d-flex text-light">
                         <span class="ml-3 font-weight-bold">info@mysite.com</span>
@@ -91,9 +93,25 @@
         <!-- carousel -->
         <div class="carousel mb-0">
             <div class="w-100 h-100">
-                <div class="hover w-100 h-100 position-absolute d-flex flex-column align-items-center justify-content-center">
-                    <h1 class="d-none d-md-block mb-5"> وب سایت آموزش زبان انگلیسی</h1>
-                    <form class="search position-relative mx-1" >
+                <div class="hover w-100 h-100 position-absolute d-flex flex-column align-items-center justify-content-start">
+                    <h1 class="d-none d-md-block mt-5 pt-5"> وب سایت آموزش زبان انگلیسی</h1>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-4 pt-5 pt-md-0 w-100">
+                        <a class="button ml-0 ml-md-3" href="#" role="button">
+                            <span>نسخه اندروید</span>
+                            <div class="icon">
+                                <i class="fab fa-android icn"></i>
+                                <i class="fa fa-download"></i>
+                            </div>
+                        </a>
+                        <a class="button mt-2 mt-md-0" href="#" role="button">
+                            <span>نسخه ios</span>
+                            <div class="icon">
+                                <i class="fab fa-apple icn"></i>
+                                <i class="fa fa-download"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <form class="search position-relative mx-1 mt-4" >
                         <input type="text"  onfocus="this.placeholder=''" onblur="this.placeholder='جستجو کنید...'" name="search" placeholder="جستجو کنید..." class="search w-100 py-3">
                         <a class="h-100 d-flex align-items-center position-absolute"><i class="fa fa-search"></i></a>
                     </form>
@@ -207,86 +225,262 @@
         <!-- <div class=" d-flex flex-wrap py-0 py-md-5"> -->
             <section class=" topservice center slider w-100 mt-0 " dir="ltr">
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
-                        <h3> دوره اول</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/gcourse2.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره دوم </h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse2.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/gcourse3.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره سوم</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse3.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/gcourse4.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره چهارم</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse4.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره پنجم </h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
-                            </div>
-                            <h5 class="m-0">رایگان</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
                         </div>
-                    </div>
-                </div> 
-                <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/gcourse2.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره ششم</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
@@ -369,86 +563,262 @@
         <!-- <div class=" d-flex flex-wrap py-0 py-md-5"> -->
             <section class=" topservice center slider w-100 mt-0 " dir="ltr">
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/course11.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره اول</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/course10.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره دوم </h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse2.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/course4.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره سوم</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse3.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/course3.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره چهارم</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse4.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
                 <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/course8.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره پنجم </h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
-                            </div>
-                            <h5 class="m-0">رایگان</h5>
+                    <div class="category_item bg-white position-relative d-flex flex-column align-items-center justify-content-between position-relative mt-3 mt-md-0 h-100">
+                        <div class="d-flex flex-column w-100">
+                            <img src="image/gcourse1.jpg" alt="" class="mb-4 w-100"/>
+                            <h3 class="w-100 text-right px-3 mb-4"> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
                         </div>
-                    </div>
-                </div> 
-                <div class="py-0 pb-5 py-md-5" dir="rtl">
-                    <div class="topitem d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/course3.jpg" alt="" class="mb-4 w-100"/>
-                        <h3>دوره ششم</h3>
-                        <p class="mt-2 text-justify mb-3 px-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و بود. </p>
-                        <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
-                            <div class=" d-flex justify-content-right align-items-end">
-                                <i class="fa fa-heart ml-2 pb-1"></i>
-                                <h5 class="m-0">20 نفر</h5>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-3">
+                                <span class="m-0">نام استاد : نام استاد</span>
+                                <span>4:20:00<i class="ion ion-clock mr-1"></i></span>
                             </div>
-                            <h5 class="m-0">رایگان</h5>
+                            <div class="like d-flex justify-content-between align-items-end px-3 w-100 mb-4">
+                                <h5 class="m-0">200000 تومان</h5>
+                                <div class=" d-flex justify-content-right align-items-end">
+                                    <i class="fa fa-heart ml-2 pb-1 text-danger"></i>
+                                    <span class="m-0">20 نفر</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
+                        </div>
+                        <div class="tooltip d-flex flex-column align-items-center justify-content-between position-absolute w-100 h-100 bg-light">
+                            <div class="w-100 d-flex align-items-start justify-content-center">
+                                <div class="bg-top d-flex justify-content-between align-items-center w-100 px-4">
+                                    <h4 class="text-white m-0">تاریخ انتشار : 2 ماه پیش</h4>
+                                    <h4 class="text-white m-0">سطح : مقدماتی A1</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column p-4 text-right">
+                                <h3> دوره مقدماتی آموزش گرامر زبان انگلیسی</h3>
+                                <p class="mt-2 text-justify mb-1">لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بو ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو  نامفهوم از صنعت چاپ نامفهوم از صنعت چاپو بود. </p>
+                            </div>
+                            <div class="w-100 px-4">
+                                <div class="border-top d-flex justify-content-between pt-3">
+                                    <span><i class='fas fa-chalkboard-teacher ml-2'></i>تعداد جلسات : 20</span>
+                                    <div class="d-flex">
+                                        <input class="star star-5" value="5" id="star-5" type="radio" name="star" />
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" value="4" id="star-4" type="radio" name="star" />
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" value="3" id="star-3" type="radio" name="star" />
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" value="2" id="star-2" type="radio" name="star" />
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" value="1" id="star-1" type="radio" name="star" />
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success w-75 mb-2">عضویت در دوره</button>
                         </div>
                     </div>
                 </div> 
@@ -633,7 +1003,7 @@
                             <div class=" d-flex w-100">
                                 <div class="col-6 pl-1">
                                     <div class="box w-100 p-1 text-center">
-                                        <a>دانلود</a>
+                                        <a class="">دانلود</a>
                                     </div>
                                 </div>
                                 <div class="col-6 pr-1">
@@ -1047,16 +1417,16 @@
                     </form>
                     <div class="follow d-flex mt-5 mt-md-4">
                         <div class="follow_container d-flex justify-content-center align-items-center ml-3">
-                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-instagram"></i></a>
+                            <a class="d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="follow_container d-flex justify-content-center align-items-center ml-3">
-                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-whatsapp"></i></a>
+                            <a class="d-flex justify-content-center align-items-center"><i class="fab fa-whatsapp"></i></a>
                         </div>
                         <div class="follow_container d-flex justify-content-center align-items-center ml-3">
-                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-telegram"></i></a>
+                            <a class="d-flex justify-content-center align-items-center"><i class="fab fa-telegram"></i></a>
                         </div>
                         <div class="follow_container d-flex justify-content-center align-items-center ml-3">
-                            <a class="d-flex justify-content-center align-items-center"><i class="fa fa-twitter"></i></a>
+                            <a class="d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1073,6 +1443,7 @@
     <script src="extra/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./extra/slick/slick.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script>
         var $item = $('.carousel');
         var $wHeight = $(window).height();

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="input.css">
     <script src="./extra/js/float-panel.js"></script>
     <link rel="stylesheet" href="extra/demo2.css">
     <title>design1</title>
@@ -89,178 +90,267 @@
             </div>
         </div>
         <!--end of navbar -->
-    <!-- courses1 -->
-    <div class=" px-2 px-md-5 w-100 d-flex flex-column align-items-center py-4 mt-4">
-        <div class="title w-100 d-flex flex-column flex-md-row mb-3 mb-md-5" id="grammer">
-            <div class="col-12 col-md-4 d-flex align-items-end justify-content-start p-0">
-                <h2 class="mb-2 category_title px-2">دوره های آموزش گرامر</h2>
-            </div>    
-            <div class="col-12 col-md-8 mb-2 d-flex justify-content-start justify-content-md-end p-0 ">
-                <form class="mr-2 select-form d-flex flex-column flex-md-row align-items-start mb-2 mb-md-0">
-                     <!-- sort -->
-                     <div class="select_mate ml-0 pl-0 mt-2 mr-0 mr-md-3 ml-0 ml-md-2" data-mate-select="active" >
-                        <select name="" onchange="" onclick="return false;" id="multiple">
-                            <option value=""  > مرتب سازی</option>
-                            <option >گران ترین</option>
-                            <option >ارزان ترین</option>
-                            <option >پر فروش ترین</option>
-                            <option >جدیدترین</option>
-                        </select>
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
-                        <span onclick="open_select(this)" class="icon_select_mate" >
-                            <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg>
-                        </span>
-                        <div class="cont_list_select_mate">
-                            <ul class="cont_select_int">  </ul> 
+        <div class="d-flex justify-content-center my-5" dir="ltr">
+            <div class="exam d-flex flex-column col-12 col-md-10">
+                <div class="examCard">
+                    <div class="exam_info d-flex flex-column">
+                        <div class="exam_title d-flex justify-content-between p-2 ">
+                            <h6 class="text-left mb-0">English Online Test</h6>
+                            <span>00:00:00</span>
                         </div>
-                    </div>  
-                    <!-- end of sort -->
-                    <!-- filter -->
-                    <div class="select_mate mt-2 mx-2" data-mate-select="active" >
-                        <select name="" onchange="" onclick="return false;" id="multiple">
-                            <option value="">همه کتاب ها</option>
-                            <option >رایگان</option>
-                            <option >نقدی</option>
-                        </select>
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
-                        <span onclick="open_select(this)" class="icon_select_mate" >
-                            <svg fill="#8e8e8e" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg>
-                        </span>
-                        <div class="cont_list_select_mate">
-                            <ul class="cont_select_int">  </ul> 
+                        <div class=" d-flex flex-wrap mx-2">
+                            <div class="d-flex flex-wrap border-md-bottom w-100">
+                                <div class="col-12 col-md-4 text-left my-3">
+                                    <span class="font-weight-bold">Student's Name : name & family</span>
+                                </div>
+                                <div class="col-12 col-md-4 text-left my-3">
+                                    <span class="font-weight-bold"> Unit : course name</span>
+                                </div>
+                                <div class="col-12 col-md-4 text-left my-3">
+                                    <span class="font-weight-bold"> Level : CourseLevel</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 text-left my-3">
+                                <span class="font-weight-bold">Date : date</span>
+                            </div>
+                            <div class="col-12 col-md-4 text-left my-3">
+                                <span class="font-weight-bold">Total Score : 100</span>
+                            </div>
+                            <div class="col-12 col-md-4 text-left my-3">
+                                <span class="font-weight-bold">Time : 45 minutes</span>
+                            </div>
                         </div>
-                    </div> 
-                    <div class="select_mate mt-2 mx-2" data-mate-select="active" >
-                        <select name="" onchange="" onclick="return false;" id="multiple">
-                            <option value="">همه دسته بندی ها</option>
-                            <option >آموزش کلمه</option>
-                            <option >آموزش نوشتن</option>
-                            <option >آموزش listening</option>
-                            <option >آموزش گرامر</option>
-                            <option >کتاب داستان</option>
-                        </select>
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
-                        <span onclick="open_select(this)" class="icon_select_mate" >
-                            <svg fill="#8e8e8e" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg>
-                        </span>
-                        <div class="cont_list_select_mate">
-                            <ul class="cont_select_int">  </ul> 
+                    </div>
+                </div>
+                <div class="examCard2 p-3 p-md-5 mt-3">
+                    <div class="section d-flex flex-column ">
+                        <h2 class="mainTitle">I- Comprehension : (6 marks)</h2>
+                        <h3 class="secondTitle">Read the paragraph</h3>
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus architecto unde suscipit magni autem obcaecati, quisquam minus ut, aliquid, officia alias quis eaque illum blanditiis ipsa enim! Qui, alias.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia laudantium neque quo sapiente dicta facere ex maiores rerum itaque in expedita facilis exercitationem eos quasi molestias, hic reprehenderit. Exercitationem, corrupti.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quaerat aspernatur, nesciunt placeat quam amet doloremque a aliquid, numquam esse perspiciatis totam reiciendis dignissimos voluptatum optio, cumque ullam nam nisi.
+                        </p>
+                        <div class="question">
+                            <p class="Qtitle">1- Write a sentence and correct the false statements :</p>
+                            <ul class="pl-3 pl-md-5">
+                                <li>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <input type="text" class="answerGap" rows="1">
+                                </li>
+                                <li>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <input type="text" class="answerGap" rows="1">
+                                </li>
+                                <li>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <input type="text" class="answerGap" rows="1">
+                                </li>
+                            </ul>
                         </div>
-                    </div> 
-                    <button class="btn btn-filter px-4 mt-2 mr-auto">فیلتر</button>
-                    <!-- end of filter -->
-                </form>
+                        
+                        <div class="question">
+                            <p class="Qtitle">2- Lorem ipsum dolor sit amet consectetur adipisicing e ?</p>
+                            <div class="custom-form-group d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 1</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 2</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 3</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p class="Qtitle">3- Lorem ipsum dolor sit amet consectetur adipisicing e ?</p>
+                            <div class="custom-form-group d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 1</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 2</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 3</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p class="Qtitle">4- Lorem ipsum dolor sit amet consectetur adipisicing e ?</p>
+                            <div class="custom-form-group d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 1</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 2</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 3</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section d-flex flex-column ">
+                        <h2 class="mainTitle">II- Writing : (10 marks)</h2>
+                        <h3 class="secondTitle">Write a letter</h3>
+                        <textarea rows="20" class="WritingBox"></textarea>
+                    </div>
+
+                    <div class="section d-flex flex-column ">
+                        <h2 class="mainTitle">III- Listening : (10 marks)</h2>
+                        <div class="d-flex flex-column flex-md-row mb-3 mb-md-0">
+                            <div class="col-12 col-md-6 p-0">
+                                <h3 class="secondTitle">Listen and answer the questions</h3>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex align-items-center p-0">
+                                <audio controls class="audioPlayer">
+                                    <source src="horse.ogg" type="audio/ogg">
+                                  Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p class="Qtitle">1- Lorem ipsum dolor sit amet consectetur adipisicing e ?</p>
+                            <div class="custom-form-group d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 1</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 2</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 3</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p class="Qtitle">2- Lorem ipsum dolor sit amet consectetur adipisicing e ?</p>
+                            <div class="custom-form-group d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 1</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 2</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 3</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p class="Qtitle">3- Lorem ipsum dolor sit amet consectetur adipisicing e ?</p>
+                            <div class="custom-form-group d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 1</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 2</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 3</span>
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-3 text-left">
+                                    <label class="radio">
+                                        <input type="radio" name="r" value="1" checked>
+                                        <span>answer 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex w-100">
+                        <button type="submit" class="btn btn-form">ارسال</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="d-flex flex-wrap py-0 mb-md-5 w-100">
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book1.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book2.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book6.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book1.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book2.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book6.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book1.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-4" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book6.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-3" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book1.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-3" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book2.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-3" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book6.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-2 py-0 pb-3" dir="rtl">
-                    <div class="book d-flex flex-column align-items-center position-relative mt-3 mt-md-0">
-                        <img src="image/book1.jpg" alt="" class="mb-2 w-100 p-1"/>
-                        <div class="d-flex justify-content-center align-items-start w-100">
-                            <a class="w-100 p-2 text-center">نام کتاب</a>
-                        </div>
-                    </div>
-                </div> 
-        </div>
-    </div>
-    <!-- end of courses1 -->
 
     <!-- footer -->
     <div class="bg-footer py-5">
@@ -456,7 +546,7 @@
     <script src="extra/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./extra/slick/slick.js"></script>
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script>
         var $item = $('.carousel');
         var $wHeight = $(window).height();

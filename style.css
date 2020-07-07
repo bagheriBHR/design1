@@ -145,6 +145,34 @@ body{
         flex-direction: column;
         justify-content: center;
     }
+    .not_found h1{
+        font-size: 10rem;
+        font-weight: bold;
+        /* color: rgba(255,255,255,0.8); */
+        background: -webkit-linear-gradient(rgba(13, 100, 143, 1),rgb(11, 160, 128)) ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .not_found .zero {
+        font-weight: bold;
+        /* color: rgba(0,0,0,0.2) !important; */
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-image: url('image/4044.jpg');
+        background-attachment: contain;
+        overflow: hidden;
+    }
+    .zero > div{
+        z-index: 3;
+        background: radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
+    }
+    .not_found h6{
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgb(73, 123, 148);
+    }
 }
 @media (min-width: 767px) {
     .header-info{
@@ -165,7 +193,7 @@ body{
         border-right: 3px solid #54b588 !important;
     }
     .topitem2 .position-absolute{
-        top:75%;
+        top:80%;
         background-color:rgba(62,160,114,0.9) ;
         color: #fff;
         text-align: center;
@@ -184,6 +212,37 @@ body{
     .footer .nav-link:hover{
         font-size: 0.8rem;
         border-bottom: 1px solid rgba(255,255,255,1);
+    }
+    .border-md-bottom{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .not_found h1{
+        font-size: 20rem;
+        font-weight: bold;
+        /* color: rgba(255,255,255,0.8); */
+        background: -webkit-linear-gradient(rgba(13, 100, 143, 1),rgb(11, 160, 128)) ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .not_found .zero {
+        font-weight: bold;
+        /* color: rgba(0,0,0,0.2) !important; */
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-image: url('image/4044.jpg');
+        background-attachment: contain;
+        overflow: hidden;
+    }
+    .zero > div{
+        z-index: 3;
+        background: radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
+    }
+    .not_found h6{
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(73, 123, 148);
     }
 }
 .title{
@@ -233,8 +292,6 @@ body{
     overflow:hidden;
     position: relative;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    border-radius: 5px;
     background-image: url(image/jmdbanner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -535,6 +592,15 @@ body{
     background-color: #595c76;
     color: #fff;
     border-radius: 3px;
+    cursor: pointer;
+}
+.music .box:hover{
+    background-color: #686b85;
+}
+.music .box a:focus , .music .box2 a:focus{
+    border: none !important;
+    box-shadow: none;
+    outline: none;
 }
 .music p{
     color: rgba(0,0,0,0.7);
@@ -555,9 +621,6 @@ body{
     color: #fff;
 }
 /* article */
-.article{
-    margin-top:250px;
-}
 .contain:hover img{
     transform: scale(1.02);
 }
@@ -568,6 +631,13 @@ body{
     cursor: pointer;
     overflow: hidden;
     box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+}
+.article .contain:hover{
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    border-bottom: 3px solid #3ea072;
 }
 .article h3{
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -822,7 +892,7 @@ body{
     font-size: 0.7rem;
     line-height: 20px;
 }
-.category_item span{
+.category_item span , .category_item h4{
     font-size: 0.7rem;
     color: rgba(0,0,0,0.5);
     font-weight: bold;
@@ -922,18 +992,18 @@ label.star:before {
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
     overflow: hidden;
 }
-.courseList > li{
+.courseList li{
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-.courseList > li:last-child{
+.courseList  li:last-child{
     border-bottom: transparent;
 }
-.courseList > li > h4 {
+.courseList  li  h4 {
     font-size: 0.9rem;
     font-weight: bold;
     color: #1b6a6f;
 }
-.courseList > li > span {
+.courseList  li  span {
     font-size: 0.8rem;
     font-weight: bold;
     color: #3ea072;
@@ -946,6 +1016,16 @@ label.star:before {
 .courseList .ion {
     font-size: 1.3rem;
     color: #1b6a6f;
+}
+.courseList .submenu li{
+    border: none;
+    padding-top:20px;
+    text-align: right;
+    list-style-type: none;
+}
+.courseList .submenu h4 ,.courseList .submenu i {
+    font-size: 0.8rem;
+    color: #23415e;
 }
 .disabled h4 , .disabled i {
     color: rgb(117, 117, 117) !important;
@@ -1067,11 +1147,12 @@ label.star:before {
 .btn-form {
     color: #ffffff;
     background-color: rgba(13, 100, 143, 0.8);
-    padding: 5px 30px;
+    padding: 5px 10px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     border-radius: 1px;
     font-size: 0.8rem;
+    width: 100px;
   }
   
   .btn-form:hover {
@@ -1133,3 +1214,220 @@ label.star:before {
     font-size: 1.2rem;
     color: rgba(0,0,0,0.6);
 }
+/* online exam------------------------------------------------------------------------------- */
+.exam .exam_title{
+    font-size: 1rem;
+    background-color: rgba(13, 100, 143, 1);
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+.examCard{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.examCard2{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.mainTitle{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.secondTitle{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.section p{
+    font-size: 0.9rem;
+    line-height: 20px;
+    text-align: justify;
+}
+.paragraph{
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 10px;
+}
+.answerGap{
+    border: none;
+    border-bottom: 1px dashed rgba(0,0,0,0.7);
+    width: 90%;
+}
+.answerGap:focus ,
+.answerGap:active ,
+.answerGap:hover,
+.answerGap:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px dashed rgba(0,0,0,0.7);
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+.section{
+    margin-bottom: 60px;
+}
+.section li{
+    margin: 20px 0;
+}
+.section li p{
+    margin-bottom: 5px;
+}
+.question{
+    margin: 15px 0;
+    /* border-bottom: 1px solid rgba(0,0,0,0.1); */
+}
+.question:last-child{
+    margin-bottom:0;
+    /* border-bottom: 1px solid rgba(0,0,0,0.1); */
+}
+.question:last-child .custom-form-group{
+    margin-bottom: 0px;
+}
+.Qtitle{
+    margin-bottom: 20px
+}
+.custom-form-group{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+}
+.WritingBox{
+    padding: 10px;
+}
+audio::-webkit-media-controls-panel {
+    background-color: rgb(243, 243, 243) !important;
+    width: 20px !important;
+    height: 100%;
+}
+audio{
+    border-radius: 3px;
+    background-color: rgb(243, 243, 243);
+    width: 100% !important;
+    height: 20px;
+}
+
+/* login------------------------------------------------------------------------------------------------- */
+.bg-login{
+    background:linear-gradient(to bottom left,rgba(13, 100, 143, 0.9),rgba(11, 160, 128,0.9))  ;
+}
+.login-card{
+  border-radius: 0px !important;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.2);
+}
+.register-card{
+  border-radius: 0px !important;
+  /* box-shadow: 0 0px 10px rgba(0,0,0,0.1); */
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+.register-card a{
+    color: rgba(13, 100, 143, 1);
+    font-weight: bold;
+    padding: 0 5px;
+}
+.register-card a:hover{
+    color: rgba(13, 100, 143, 0.8);
+    cursor: pointer;
+}
+.login-card h4{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.login-card .position-absolute{
+    top: -50px;
+    left: 0;
+}
+.login-card .img_card{
+    border-radius: 50%;
+    background-color: rgba(13, 100, 143, 1);
+    box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+    width: 100px;
+    height: 100px;
+}
+.login-card .img_card2{
+    top: -25px;
+    left: 0;
+}
+.login-card .img_card2 > div{
+    background-color: rgba(13, 100, 143, 1);
+    box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+    width: 90%;
+    height: 50px;
+}
+.login-card .position-absolute i{
+    font-size: 5rem;
+    color: rgba(255, 255, 255,0.7);
+}
+.custom-form-group i{
+    color: rgba(0,0,0,0.4);
+    font-size: 1rem;
+}
+.custom-input{
+    background-color: #fff;
+    color: rgb(65, 65, 65) !important;
+    font-size: 0.8rem !important;
+    border: none;
+    border: none !important;
+    border-radius: 2px;
+    padding-right: 35px;
+    height: 40px;
+} 
+.custom-input:focus ,
+.custom-input:active ,
+.custom-input:-webkit-autofill,
+.custom-input:-webkit-autofill:hover,
+.custom-input:-webkit-autofill:focus,
+.custom-input:-webkit-autofill:active{
+    transition: #fff 5000s ease-in-out 0s !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: rgb(65, 65, 65)!important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none
+}
+.custom-input::placeholder , .custom-field::placeholder{
+    font-size: 0.8rem !important;
+    color:rgba(0,0,0,0.4);
+}
+.form-icon{
+    right: 10px;
+    top: 12px;
+    color: rgba(0,0,0,0.5) !important;
+    z-index: 3;
+    font-size: 1rem;
+    position: absolute;
+}
+.forget{
+    color : rgba(255,255,255,1)!important;
+    /* color : rgba(13, 100, 143, 1)!important; */
+    transition: all 0.3s;
+}
+a.forget:hover{
+    cursor: pointer;
+    color: rgba(255,255,255,0.8) !important;
+}
+.form-button{
+    color: rgba(255, 255, 255, 0.9)!important;
+    font-size: 1rem;
+    background-color: rgba(13, 100, 143, 1);
+    transition: all 0.3s;
+    width: 100%;
+    padding: 5px 0px;
+    margin-right: auto;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    height: 40px;
+}
+.form-button:hover{
+    background-color: rgba(13, 100, 143, 0.9);
+}
+

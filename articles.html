@@ -94,7 +94,7 @@
         <div class="title w-100 d-flex flex-column flex-md-row mb-3 mb-md-5" id="grammer">
             <div class="col-12 col-md-4 d-flex align-items-end justify-content-start p-0">
                 <h2 class="mb-2 category_title px-2">دوره های آموزش گرامر</h2>
-            </div>    
+            </div>  
             <div class="col-12 col-md-8 mb-2 d-flex justify-content-start justify-content-md-end p-0 ">
                 <form class="mr-2 select-form d-flex flex-column flex-md-row align-items-start mb-2 mb-md-0">
                      <!-- sort -->
@@ -117,7 +117,51 @@
                     </div>  
                     <!-- end of sort -->
                     <!-- filter -->
-                    <div class="select_mate mt-2 mx-2" data-mate-select="active" >
+
+                    <div class="select_mate mx-0 mx-md-2 mt-2" data-mate-select="active" >
+                        <select name="" onchange="" onclick="return false;" id="multiple">
+                            <option>dcdvfdgh hytj</option>
+                            <option>آموزش نوشتن</option>
+                            <option>آموزش</option>
+                            <option>آموزش گرامر</option>
+                        </select>
+                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
+                        <span onclick="open_select(this)" class="icon_select_mate" >
+                            <svg fill="#8e8e8e" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                <path d="M0-.75h24v24H0z" fill="none"/>
+                            </svg>
+                        </span>
+                        <div class="cont_list_select_mate">
+                            <ul class="cont_select_int">  </ul> 
+                        </div>
+                    </div> 
+
+                    <button class="btn btn-filter px-4 mt-2 mr-auto">فیلتر</button>
+                    <!-- end of filter -->
+                </form>
+            </div>  
+            <!-- <div class="col-12 col-md-8 mb-2 d-flex justify-content-start justify-content-md-end p-0 ">
+                <form class="mr-2 select-form d-flex flex-column flex-md-row align-items-start mb-2 mb-md-0">
+                     <div class="select_mate ml-0 pl-0 mt-2 mr-0 mr-md-3 ml-0 ml-md-2" data-mate-select="active" >
+                        <select name="" onchange="" onclick="return false;" id="multiple">
+                            <option value=""  > مرتب سازی</option>
+                            <option >قدیمی ترین</option>
+                            <option >جدیدترین</option>
+                        </select>
+                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
+                        <span onclick="open_select(this)" class="icon_select_mate" >
+                            <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                <path d="M0-.75h24v24H0z" fill="none"/>
+                            </svg>
+                        </span>
+                        <div class="cont_list_select_mate">
+                            <ul class="cont_select_int">  </ul> 
+                        </div>
+                    </div>  
+
+                    <div class="select_mate mt-2 mx-0 mx-md-2" data-mate-select="active" >
                         <select name="" onchange="" onclick="return false;" id="multiple">
                             <option value="">همه دسته بندی ها</option>
                             <option >آموزش کلمه</option>
@@ -137,9 +181,8 @@
                         </div>
                     </div> 
                     <button class="btn btn-filter px-4 mt-2 mb-0 mr-auto">فیلتر</button>
-                    <!-- end of filter -->
                 </form>
-            </div>
+            </div> -->
         </div>
             <div class="article m-0 d-flex flex-wrap py-0 py-md-3">
                 <div class="col-12 col-md-3 mb-4">
@@ -412,7 +455,7 @@
     <script src="extra/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./extra/slick/slick.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <script>
         var $item = $('.carousel');
         var $wHeight = $(window).height();
