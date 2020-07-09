@@ -95,52 +95,91 @@
             <div class="col-12 col-md-4 d-flex align-items-end justify-content-start p-0">
                 <h2 class="mb-2 category_title px-2">دوره های آموزش گرامر</h2>
             </div>  
-            <div class="col-12 col-md-8 mb-2 d-flex justify-content-start justify-content-md-end p-0 ">
-                <form class="mr-2 select-form d-flex flex-column flex-md-row align-items-start mb-2 mb-md-0">
-                     <!-- sort -->
-                     <div class="select_mate ml-0 pl-0 mt-2 mr-0 mr-md-3 ml-0 ml-md-2" data-mate-select="active" >
-                        <select name="" onchange="" onclick="return false;" id="multiple">
-                            <option value=""  > مرتب سازی</option>
-                            <option >قدیمی ترین</option>
-                            <option >جدیدترین</option>
-                        </select>
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
-                        <span onclick="open_select(this)" class="icon_select_mate" >
-                            <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg>
-                        </span>
-                        <div class="cont_list_select_mate">
-                            <ul class="cont_select_int">  </ul> 
-                        </div>
-                    </div>  
-                    <!-- end of sort -->
-                    <!-- filter -->
-
-                    <div class="select_mate mx-0 mx-md-2 mt-2" data-mate-select="active" >
-                        <select name="" onchange="" onclick="return false;" id="multiple">
-                            <option>dcdvfdgh hytj</option>
-                            <option>آموزش نوشتن</option>
-                            <option>آموزش</option>
-                            <option>آموزش گرامر</option>
-                        </select>
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p>
-                        <span onclick="open_select(this)" class="icon_select_mate" >
-                            <svg fill="#8e8e8e" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg>
-                        </span>
-                        <div class="cont_list_select_mate">
-                            <ul class="cont_select_int">  </ul> 
-                        </div>
-                    </div> 
-
-                    <button class="btn btn-filter px-4 mt-2 mr-auto">فیلتر</button>
-                    <!-- end of filter -->
-                </form>
-            </div>  
+            <div class="col-12 col-md-8 mb-2 d-flex flex-column flex-md-row justify-content-start justify-content-md-end p-0 ">
+                <!-- sort -->
+                <div class="select-box mt-2 mt-md-0 ml-0 ml-md-2">
+                  <div class="select-box__current" tabindex="1">
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text">گران ترین</p>
+                    </div>
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text">ارزان ترین</p>
+                    </div>
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text2">مرتب سازی</p>
+                    </div>
+                    <svg  class="select-box__icon" fill="#ffffff" height="40" viewBox="0 0 20 20" width="40" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                      <path d="M0-.75h24v24H0z" fill="none"/>
+                  </svg>
+                    <!-- <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/> -->
+                  </div>
+                  <ul class="select-box__list">
+                    <li>
+                      <label class="select-box__option" for="0" aria-hidden="aria-hidden">گران ترین</label>
+                    </li>
+                    <li>
+                      <label class="select-box__option" for="1" aria-hidden="aria-hidden">ارزان ترین</label>
+                    </li>
+                  </ul>
+              </div> 
+              <!-- end of sort -->
+              <!-- filter -->
+              <div class="select-box ml-0 mt-2 mt-md-0 ml-md-2 ">
+                  <div class="select-box__current" tabindex="1">
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text">در حال تدریس </p>
+                    </div>
+                    <div class="select-box__value ">
+                      <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text">تکمیل شده</p>
+                    </div>
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text1">همه دوره ها</p>
+                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                  </div>
+                  <ul class="select-box__list">
+                    <li>
+                      <label class="select-box__option" for="0" aria-hidden="aria-hidden"> در حال تدریس</label>
+                    </li>
+                    <li>
+                      <label class="select-box__option" for="1" aria-hidden="aria-hidden"> تکمیل شده</label>
+                    </li>
+                  </ul>
+              </div> 
+              <div class="select-box  ml-0 mt-2 mt-md-0 ml-md-2 ">
+                  <div class="select-box__current" tabindex="1">
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text"> نقدی</p>
+                    </div>
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text"> رایگان</p>
+                    </div>
+                    <div class="select-box__value">
+                      <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                      <p class="select-box__input-text1 bg-white"> همه دوره ها</p>
+                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                  </div>
+                  <ul class="select-box__list">
+                    <li>
+                      <label class="select-box__option" for="0" aria-hidden="aria-hidden">نقدی </label>
+                    </li>
+                    <li>
+                      <label class="select-box__option" for="1" aria-hidden="aria-hidden">رایگان </label>
+                    </li>
+                  </ul>
+              </div> 
+              <button class="btn btn-filter px-4 mt-2 mt-md-0">فیلتر</button>
+              <!-- end of filter -->
+            
+          </div> 
             <!-- <div class="col-12 col-md-8 mb-2 d-flex justify-content-start justify-content-md-end p-0 ">
                 <form class="mr-2 select-form d-flex flex-column flex-md-row align-items-start mb-2 mb-md-0">
                      <div class="select_mate ml-0 pl-0 mt-2 mr-0 mr-md-3 ml-0 ml-md-2" data-mate-select="active" >
