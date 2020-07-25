@@ -67,6 +67,7 @@ body {
     color: #fff;
     top: 1px;
 }
+
 @media print {
     .mainPage * {
         display: none;
@@ -74,8 +75,8 @@ body {
     body.modal-open {
         visibility: hidden;
     }
-    body.modal-open #printSection, body.modal-open  #printSection * {
-      visibility:visible;
+    body.modal-open #printSection, body.modal-open #printSection * {
+        visibility: visible;
     }
     #printSection {
         position: absolute;
@@ -84,9 +85,10 @@ body {
         margin: 0;
         padding: 0;
         overflow: visible!important;
-      width: 100%;
+        width: 100%;
     }
-  }
+}
+
 @media (max-width: 767px) {
     .navbar, .navbar>div {
         width: 100%;
@@ -152,11 +154,11 @@ body {
         -moz-transition: right 0.3s ease-in;
         transition: right 0.3s ease-in;
     }
-    .profile-dropdown{
+    .profile-dropdown {
         width: 100%;
         padding: 0 40px;
     }
-    .profile-dropdown .dropdown-menu{
+    .profile-dropdown .dropdown-menu {
         margin-top: 178px;
         width: 100% !important;
     }
@@ -178,7 +180,7 @@ body {
     }
     .dropdown-toggle::after {
         margin-right: 10px !important;
-        color: rgba(0,0,0,0.4);
+        color: rgba(0, 0, 0, 0.4);
     }
     .footer .nav-link {
         text-align: right;
@@ -237,6 +239,9 @@ body {
     }
     .article_info .modal-dialog {
         max-width: 95% !important;
+    }
+    .onlineCourse .chatCard, .onlineCourse .chatCard_me {
+        width: 100% !important;
     }
 }
 
@@ -316,10 +321,9 @@ body {
     .custom-select {
         width: 200px;
     }
-
     .dropdown-toggle::after {
         margin-right: 10px;
-        color: rgba(0,0,0,0.4);
+        color: rgba(0, 0, 0, 0.4);
     }
     .dropdown-menu {
         width: 200px;
@@ -393,6 +397,11 @@ body {
     cursor: pointer;
 }
 
+.logo a {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
 .carousel {
     width: 100%;
     overflow: hidden;
@@ -412,6 +421,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .navbar-btn {
     color: #fff !important;
     background-color: rgba(193, 98, 162, 1);
@@ -454,9 +464,11 @@ body {
     padding: 0 !important;
     color: rgba(0, 0, 0, 0.7) !important;
 }
-.navbar_profile{
-    padding:25px 0;
+
+.navbar_profile {
+    padding: 25px 0;
 }
+
 .dropdown-menu .dropdown-item {
     text-align: right;
     padding: 15px;
@@ -464,18 +476,22 @@ body {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7) !important;
 }
-.dropdown-menu .dropdown-item:hover{
+
+.dropdown-menu .dropdown-item:hover {
     background-color: rgba(6, 38, 54, 0.04);
 }
-.dropdown .profile_icon{
+
+.dropdown .profile_icon {
     font-size: 2rem;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
-.dropdown h5{
+
+.dropdown h5 {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.7);
     font-weight: 600;
 }
+
 .header-bg {
     max-width: 100%;
     height: 100vh;
@@ -512,21 +528,8 @@ body {
     box-shadow: none !important;
     border: none !important;
 }
- input:focus,
- input:active,
- input:-webkit-autofill,
- input:-webkit-autofill:hover,
- input:-webkit-autofill:focus,
- select:focus,
- select:active,
- select:-webkit-autofill,
- select:-webkit-autofill:hover,
- select:-webkit-autofill:focus,
- textarea:focus,
- textarea:active,
- textarea:-webkit-autofill,
- textarea:-webkit-autofill:hover,
- textarea:-webkit-autofill:focus {
+
+input:focus, input:active, input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, select:focus, select:active, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus, textarea:focus, textarea:active, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus {
     outline: none !important;
     box-shadow: none !important;
 }
@@ -2360,164 +2363,297 @@ a.forget:hover {
 }
 
 /* profile page---------------------------------------------------------------------------- */
-.profileCard{
+
+.profileCard {
     border-radius: 3px;
     position: relative;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-top: 2px solid #1b6a6f;
 }
-.profile li{
+
+.profile li {
     width: 100% !important;
     text-align: right;
     margin: 2px 0;
-    color: rgb(0,0,0,0.7);
+    color: rgb(0, 0, 0, 0.7);
     transition: all 0.3s;
     font-size: 0.9rem !important;
     list-style-type: none;
     cursor: pointer;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 5px 0;
 }
-.profile li:last-child{
+
+.profile li:last-child {
     border-bottom: 1px solid transparent;
 }
-.profile a{
-    color: rgb(0,0,0,0.8);
+
+.profile a {
+    color: rgb(0, 0, 0, 0.8);
 }
-.profile .nav-link.active, .profile .show>.nav-link , .profile .nav-link:hover{
+
+.profile .nav-link.active, .profile .show>.nav-link, .profile .nav-link:hover {
     border-radius: 5px;
     color: #34878d !important;
 }
-.profile .nav-link.active i, .profile .show>.nav-link i, .profile .nav-link:hover i{
-    color: #34878d  !important;
+
+.profile .nav-link.active i, .profile .show>.nav-link i, .profile .nav-link:hover i {
+    color: #34878d !important;
 }
-.tab-pane{
-    color: rgb(0,0,0,0.7);
+
+.tab-pane {
+    color: rgb(0, 0, 0, 0.7);
     text-align: right;
 }
-.profile ul i{
-    color: rgb(0,0,0,0.5);
+
+.profile ul i {
+    color: rgb(0, 0, 0, 0.5);
     font-size: 1rem;
     transition: all 0.3s;
     margin-left: 10px !important;
 }
-.coupon table tr{
-    color: rgb(0,0,0,0.9);
+
+.coupon table tr {
+    color: rgb(0, 0, 0, 0.9);
 }
-.profile h4{
+
+.profile h4 {
     font-size: 0.9rem;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(0,0,0,0.7);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.7);
     font-weight: bold;
-    color: rgb(0,0,0,0.7);
+    color: rgb(0, 0, 0, 0.7);
 }
-.gold{
+
+.gold {
     color: #008f53;
-    font-weight: bold;    
+    font-weight: bold;
 }
+
 .profile .ticket a {
     text-decoration: none;
-    color: rgb(0,0,0,0.7) !important;
+    color: rgb(0, 0, 0, 0.7) !important;
 }
-.profile .ticket a i{
+
+.profile .ticket a i {
     text-decoration: none;
     color: #116301 !important;
 }
-.profile h5{
+
+.profile h5 {
     font-size: 1rem;
 }
-.profile td img{
-    width:50px;
+
+.profile td img {
+    width: 50px;
 }
-.profile .table-striped td{
+
+.profile .table-striped td {
     border: none;
-    border-top: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
-.avatar{
+
+.avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.profile .custom-form-group{
-    border: 1px solid rgba(0,0,0,0.3);
-    margin:5px;
+
+.profile .custom-form-group {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 5px;
 }
-.avatar-btn{
-    color:#777777 !important; ;
+
+.avatar-btn {
+    color: #777777 !important;
+    ;
     padding: 5px 10px;
     transition: all 0.3s;
     border: 1px solid #ffffff !important;
-    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     border-radius: none !important;
 }
-.avatar-btn:hover , .avatar-btn:focus{
+
+.avatar-btn:hover, .avatar-btn:focus {
     border: 1px solid #ffffff !important;
     padding: 5px 10px;
     border: none;
     outline: none;
 }
-.bg-blue{
-    background-color:  rgba(13, 100, 143, 1);
+
+.bg-blue {
+    background-color: rgba(13, 100, 143, 1);
     font-size: 0.8rem !important;
 }
-.profile p{
-    color: rgba(0,0,0,0.7);
+
+.profile p {
+    color: rgba(0, 0, 0, 0.7);
 }
-.form-control{
+
+.form-control {
     font-size: 0.9rem;
 }
-.ticket input::placeholder,
-.ticket textarea::placeholder {
+
+.ticket input::placeholder, .ticket textarea::placeholder {
     font-size: 0.9rem;
 }
 
 /* teacher info page -------------------------------------------------------------- */
-.teacher-info  .profile_container {
+
+.teacher-info .profile_container {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid #fff;
 }
-.teacher-info .courseTeacher a {
-    background-color:  #1b6a6f;
+
+.teacher-info .courseTeacher a, .onlineCourse .courseTeacher .title {
+    background-color: rgba(13, 100, 143, 1);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
+
 .teacher-info .courseTeacher h3 {
     font-size: 0.8rem;
     color: #fff;
     margin: 8px 0;
     font-weight: normal;
 }
-.teacher-info .courseTeacher h4 {
+
+.teacher-info .courseTeacher h4, .onlineCourse .courseTeacher h4 {
     font-size: 1rem;
     color: #fff;
     margin: 8px 0;
 }
+
 /* Dropdown Button--------------------------------------------------------------------------- */
+
 .dropbtn {
     background-color: transparent;
     padding: 25px 0;
     border: none;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  .dropbtn:focus {
+}
+
+.dropbtn:focus {
     box-shadow: transparent;
     outline: none;
     border: none;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 200px;
     z-index: 1;
-  }
+}
 
-  
+/* onlineCourse------------------------------------------------------------------------------ */
+
+.onlineCourse .courseTeacher {
+    background-color: #f1f5f8;
+}
+
+.onlineCourse .imageContainer {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.onlineCourse li {
+    margin: 20px 0;
+}
+
+.onlineCourse li h6 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.onlineCourse li span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.5rem;
+}
+
+.onlineCourse li i {
+    color: #0d648f;
+    font-size: 0.5rem;
+}
+
+.onlineCourse li.offline i {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.5rem;
+}
+
+.onlineCourse .chat h4 {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.onlineCourse .chatCard {
+    background-color: #0d648f;
+    width: 60%;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.onlineCourse .chatCard_me {
+    background-color: #f1f5f8;
+    width: 60%;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.onlineCourse .chatCard p, .onlineCourse .chatCard_me p {
+    font-size: 0.8rem;
+    line-height: 25px;
+}
+
+.onlineCourse .chatCard h6 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.onlineCourse .form-icon {
+    left: 10px;
+    top: 12px;
+    color: rgba(0, 0, 0, 0.4) !important;
+    z-index: 3;
+    font-size: 1rem;
+    position: absolute;
+}
+
+.onlineCourse textarea {
+    background-color: #d5e0e6;
+    padding: 10px;
+}
+
+.onlineCourse textarea:focus, .onlineCourse textarea:active, .onlineCourse textarea:-webkit-autofill, .onlineCourse input:-webkit-autofill:hover, .onlineCourse textarea:-webkit-autofill:focus, .onlineCourse textarea:-webkit-autofill:active {
+    transition: #fff 5000s ease-in-out 0s !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: rgb(65, 65, 65)!important;
+    background-color: #d5e0e6;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none
+}
+
+.onlineCourse .form-button {
+    color: rgba(255, 255, 255, 0.9)!important;
+    font-size: 1rem;
+    background-color: rgba(13, 100, 143, 1);
+    transition: all 0.3s;
+    padding: 5px 0px;
+    margin-right: auto;
+    border-radius: 3px;
+    width: 150px;
+}
