@@ -27,11 +27,11 @@ body {
   color: #fff;
   z-index: 10000;
   transform: rotate(45deg);
-  width: 104px;
-  top: 11px;
-  right: -26px;
+  width: 186px;
+  top: 39px;
+  right: -37px;
   text-align: center;
-  padding: 2px 0px;
+  padding: 5px 0px;
   font-weight: bold;
 }
 
