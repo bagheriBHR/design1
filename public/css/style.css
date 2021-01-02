@@ -2691,3 +2691,37 @@ a.forget:hover {
 .aboutus-page-item:hover{
   color: #000;
 }
+
+.comment-card {
+    background-color: rgba(0, 0, 0, 0.01);
+    margin-top: 10px;
+}
+.comment-card:first-child {
+      margin-top: 0px;
+}
+.comment-card h6 {
+      text-align: right;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.7);
+}
+.comment-card p {
+      text-align: justify;
+      font-size: 0.9rem;
+      color: rgba(0, 0, 0, 0.8);
+}
+.comment-card button {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-color: transparent;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 2px 30px;
+  margin-bottom: 15px;
+    outline: 0px !important;
+    box-shadow: none !important;
+    transition: all 0.3s;
+}
+.comment-card button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  color: rgba(0, 0, 0, 0.8);
+}

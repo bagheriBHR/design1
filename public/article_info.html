@@ -264,7 +264,113 @@
               پایان برند.
             </p>
           </div>
+          <!-- comment form -->
+          <div class="d-flex flex-column my-4">
+            <div class="courseCard mt-3 pt-5 pb-3 px-2">
+              <h5 class="courseTitle m-0">فرم نظرات</h5>
+              <div class="comment d-flex flex-column align-items-start">
+                <form class="col-md-12" method="post" action="">
+                  <div class="d-flex flex-column flex-md-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm input-form"
+                        name="name"
+                        placeholder="نام و نام خانوادگی خود را وارد کنید."
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="email"
+                        class="form-control form-control-sm input-form"
+                        name="email"
+                        id="inputAddress"
+                        placeholder="پست الکترونیکی خود را وارد کنید."
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <textarea
+                      type="text"
+                      rows="5"
+                      class="input-form custom-field form-control form-control-sm ckeditor"
+                      id="textareaDescription"
+                      name="description"
+                      placeholder="توضیحات را وارد کنید..."
+                    ></textarea>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-form">ارسال</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+           <!-- end of comment form -->
+          <!-- comments -->
+          <div class=" d-flex flex-column my-3">
+            <div class="courseCard mt-3 pt-5 pb-3 px-2">
+              <h5 class="courseTitle m-0">نظرات شما</h5>
+              <div class="comment-card d-flex flex-column p-3 border">
+                  <div class="d-flex align-items-end justify-content-between mb-2">
+                      <h6>نام و نام خانوادگی :</h6>
+                      <button class="btn-open" id="div-comment-1">پاسخ</button>
+                  </div>
+                  <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک</p>
+                  <div class="form-reply col-md-12" id="f-div-comment-1" style="display: none">
+                    <form class=" " method="post">
+                        <div class="d-flex">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control form-control-sm" name="rname" placeholder="نام و نام خانوادگی"/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control form-control-sm" name="remail" placeholder="پست الکترونیکی"/>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea type="text" rows="10" class="custom-field form-control form-control-sm"  name="rbody" placeholder="توضیحات را وارد کنید..."></textarea>
+                        </div>
+                        <input type="hidden" name="parent_id">
+                        <input type="hidden" name="article_id">
+                        <div class="form-group col-md-12">
+                            <button type="submit" class="btn btn-form">ارسال</button>
+                        </div>
+                    </form>
+                </div>
+
+                  <div class="subComment pr-5 border-top pt-3 mt-3">
+                      <div class="d-flex align-items-end justify-content-between mb-2">
+                          <h6>نام و نام خانوادگی :</h6>
+                          <button class="btn-open" id="div-comment-2">پاسخ</button>
+                      </div>
+                      <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک</p>
+                      <div class="form-reply col-md-12" id="f-div-comment-2" style="display: none">
+                        <form class=" " method="post">
+                            <div class="d-flex">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control form-control-sm" name="rname" placeholder="نام و نام خانوادگی"/>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control form-control-sm" name="remail" placeholder="پست الکترونیکی"/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea type="text" rows="10" class="custom-field form-control form-control-sm"  name="rbody" placeholder="توضیحات را وارد کنید..."></textarea>
+                            </div>
+                            <input type="hidden" name="parent_id">
+                            <input type="hidden" name="article_id">
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-form">ارسال</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of comments -->
         </div>
+
         <div class="col-12 col-md-4 d-flex flex-column">
           <div
             class="courseCard courseTeacher d-flex flex-column align-items-center mt-3 p-2"
@@ -365,51 +471,6 @@
         </div>
       </div>
     </div>
-    <!-- comments -->
-    <div class="px-2 px-md-5">
-      <div class="col-12 col-md-8 d-flex flex-column my-4">
-        <div class="courseCard mt-3 pt-5 pb-3 px-2">
-          <h5 class="courseTitle m-0">نظرات شما</h5>
-          <div class="comment d-flex flex-column align-items-start">
-            <form class="col-md-12" method="post" action="">
-              <div class="d-flex flex-column flex-md-row">
-                <div class="form-group col-md-6">
-                  <input
-                    type="text"
-                    class="form-control form-control-sm input-form"
-                    name="name"
-                    placeholder="نام و نام خانوادگی خود را وارد کنید."
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <input
-                    type="email"
-                    class="form-control form-control-sm input-form"
-                    name="email"
-                    id="inputAddress"
-                    placeholder="پست الکترونیکی خود را وارد کنید."
-                  />
-                </div>
-              </div>
-              <div class="form-group col-md-12">
-                <textarea
-                  type="text"
-                  rows="5"
-                  class="input-form custom-field form-control form-control-sm ckeditor"
-                  id="textareaDescription"
-                  name="description"
-                  placeholder="توضیحات را وارد کنید..."
-                ></textarea>
-              </div>
-              <div class="form-group col-md-12">
-                <button type="submit" class="btn btn-form">ارسال</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- footer -->
     <div class="bg-footer py-5">
       <div class="footer px-3 px-md-5 d-flex flex-column p-0">
@@ -663,5 +724,16 @@
     <script src="./js/float-panel.js"></script>
     <script src="./js/custom.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- this is for form reply -->
+    <script  src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>
+        $(".btn-open").click(function(){
+            var service = this.id;
+            var service_id = '#f-' + service;
+            $(service_id).toggle();
+        })
+    </script>
+  
   </body>
 </html>
