@@ -2675,3 +2675,19 @@ a.forget:hover {
   border-radius: 3px;
   width: 150px;
 }
+
+.aboutus ul{
+  list-style: none;
+}
+.aboutus ul p{
+  color: rgba(0,0,0,0.6);
+}
+
+.aboutus-page-item{
+  color: rgba(0,0,0,0.8);
+  text-decoration: none !important;
+  transition: all 0.3s;
+}
+.aboutus-page-item:hover{
+  color: #000;
+}
